@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo3.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>BCA Student</p>
+                    <h1>Hi, I'm <span>Kalpatru</span><br> Paul From India</h1>
+                </div>
+            </div>
+    </div>
+    <!-- ----------abouter---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a BCA (Bachelor of Computer Applications) student from India, passionate about web development and App development. My journey in the world of technology has been an exciting one, where I've had the opportunity to explore various aspects of programming and design.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exprience')">Expriences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Skills</span><br>C, C++, Python, Java
+                            </li>
+                            <li><span>Other skills</span><br>Web Devlopment, Problem-Solving Skills,    Teamwork
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>Face Cappers</span><br>Face identification and recognition web app
+                            </li>
+                            <li><span>Portfolio</span><br>Portfolio website using HTML, CSS and JS
+                            </li>
+                            <li><span>ToDo List</span><br>Todo List website using HTML, CSS and JS
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matriculation</span> - 77.6%
+                            </li>
+                            <li><span>Higher Secondry</span> - 68.6%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------services------ -->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos ex praesentium animi odio, earum pariatur ipsa perspiciatis nihil libero!</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos ex praesentium animi odio, earum pariatur ipsa perspiciatis nihil libero!</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Portrait making</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos ex praesentium animi odio, earum pariatur ipsa perspiciatis nihil libero!</p>
+                    <a href="#">Lern more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- --------services------ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>If you're seeking a visually stunning and user-friendly website, our web design service is your solution. We create websites that not only look great but also provide a seamless browsing experience for your visitors.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Elevate your mobile app with our expert app design service. We specialize in crafting intuitive and visually appealing mobile applications that engage users and boost your brand's presence.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-paintbrush"></i>
+                <h2>Portrait Making</h2>
+                <p>Transform your cherished moments into timeless works of art with our portrait making service. Our skilled artists capture the essence of your loved ones in beautiful, hand-crafted portraits that you'll treasure forever.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Personal portfolio</h3>
+                        <p>Explore my personal portfolio showcasing a collection of my creative projects, skills, and accomplishments. Dive into a world of innovation and inspiration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Online Shopping Web</h3>
+                        <p>Discover a convenient and delightful online shopping experience on our web platform. Explore a wide range of products and enjoy secure, hassle-free shopping from the comfort of your home.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bikashpaul62027@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6202716221</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kalpatru-paul-a5a118251"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100012359884386"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/bikash___paul/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/kalpatru123"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" requires>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Kalpatru.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+</body>
+<!-- ------------javascript-------------------------------- -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxAzJUgtUF4sBbbILZagqKo2EamSsJ1xqJVFJshZoFb5QNzwn5oJ0r_aWl1PrBHcbsq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHtml = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
